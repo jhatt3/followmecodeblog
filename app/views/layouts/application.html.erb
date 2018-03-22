@@ -9,6 +9,45 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar is-danger" role="navigation" aria-label="dropdown navigation">
+  <div class="navbar-item has-dropdown is-hoverable">
+    <a class="navbar-link">
+      Docs
+    </a>
+
+    <div class="navbar-dropdown">
+
+        <%= link_to 'Blog Posts', posts_path, class: 'navbar-item' %>
+
+      <a class="navbar-item">
+        Elements
+      </a>
+      <a class="navbar-item">
+        Components
+      </a>
+      <hr class="navbar-divider">
+      <div class="navbar-item">
+        Version 0.6.2
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <section class="hero is-medium is-dark is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            <%= yield :page_title %>
+          </h1>
+          <h2 class="subtitle">
+            <%= yield :page_author %>
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <div class='container'>
+      <%= yield %>
+    </div>
   </body>
 </html>
