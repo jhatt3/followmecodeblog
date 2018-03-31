@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Commentblog</title>
+    <title>Follow Me Code - Commentblog</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -17,17 +17,15 @@
 
     <div class="navbar-dropdown">
 
-        <%= link_to 'Blog Posts', posts_path, class: 'navbar-item' %>
+        <%= link_to 'Blog Posts', root_path, class: 'navbar-item' %>
+        <%= link_to 'New Blog Post', new_post_path, class: 'navbar-item' %>
 
-      <a class="navbar-item">
-        Elements
-      </a>
       <a class="navbar-item">
         Components
       </a>
       <hr class="navbar-divider">
       <div class="navbar-item">
-        Version 0.6.2
+        Version 0.2.2
       </div>
     </div>
   </div>
