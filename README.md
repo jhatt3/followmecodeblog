@@ -23,3 +23,7 @@ Things you may want to cover:
 
 * ...
 3/30 - Blog functionality is complete with comments.  Used Bulma library for css.
+to do ---- 
+~> add login and user security.  mailer and email list for commentors.
+~> integrate into Follow Me Code site.
+
